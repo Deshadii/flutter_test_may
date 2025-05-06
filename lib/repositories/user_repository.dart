@@ -9,6 +9,7 @@ import '../models/user.dart';
 // - Handle errors properly
 
 class UserRepository {
+  // ignore: unused_field
   final http.Client _client;
   
   UserRepository({http.Client? client}) : _client = client ?? http.Client();

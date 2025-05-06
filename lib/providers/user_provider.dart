@@ -17,9 +17,10 @@ enum UserState {
 }
 
 class UserProvider extends ChangeNotifier {
+  // ignore: unused_field
   final UserRepository _userRepository;
   
-  // TODO: Add state variables
+  // -TODO: Add state variables
   UserState _state = UserState.initial;
   User? _user;
   String? _errorMessage;
@@ -31,9 +32,9 @@ class UserProvider extends ChangeNotifier {
   UserProvider({UserRepository? userRepository}) 
       : _userRepository = userRepository ?? UserRepository();
   
-  // TODO: Implement fetchUser method
+  // -TODO: Implement fetchUser method
   Future<void> fetchUser(String userId) async {
-    // TODO: Implement state management for fetching user data
+    // -TODO: Implement state management for fetching user data
     // - Set loading state
     // - Call repository method
     // - Handle success and error cases
